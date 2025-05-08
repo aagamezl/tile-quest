@@ -7,8 +7,6 @@
 * **Tiled Map Integration** – Loads maps exported from [Tiled Map Editor](https://www.mapeditor.org/).
 * **Multi-Layer Rendering** – Draws stacked layers (terrain, objects, decorations).
 * **Embedded Tilesets** – Requires tileset metadata embedded in the map file.
-* **Keyboard Controls** – Move your character with `WASD` or arrow keys.
-* **Customizable Sprite** – Swap the default character with your own sprites.
 
 ## How It Works
 
@@ -20,6 +18,16 @@ A live version is available! [Try TileQuest](https://aagamezl.github.io/tile-que
 ## Planned Improvements
 
 - [ ] **Collision Layers** (Block movement on specific tiles).
+- [ ] **Playable Characters** Move your character with WASD or arrow keys.
+- [ ] **Customizable Maps/Tilesets**
+  - Load external maps
+  - Load external tilesets at runtime
+- [ ] **Multiplayer (WebSocket)**
+  - Real-time player interactions
+  - Shared map state synchronization
+- [ ] **Enhanced Character Controls**
+  - Sprite animation states (idle/run/jump)
+  - Equipment visual effects
 - [ ] **Animated Tiles** (Support Tiled’s tile animations).
 - [ ] **Camera Follow** (Smoothly center view on the player).
 
