@@ -19,9 +19,11 @@ A live version is available! [Try TileQuest](https://aagamezl.github.io/tile-que
 
 - [ ] **Collision Detection** (Block movement on specific tiles).
 - [ ] **Playable Characters** Move your character with WASD or arrow keys.
-- [ ] **Customizable Maps/Tilesets**
+- [x] **Customizable Maps/Tilesets**
   - [x] Load external maps
   - [x] Load external tilesets at runtime
+- [ ] **Customizable Characters/Sprites**
+  - [ ] Load external sprite sheets
 - [ ] **Multiplayer (WebSocket)**
   - Real-time player interactions
   - Shared map state synchronization
@@ -30,6 +32,7 @@ A live version is available! [Try TileQuest](https://aagamezl.github.io/tile-que
   - Equipment visual effects
 - [ ] **Animated Tiles** (Support Tiled’s tile animations).
 - [ ] **Camera Follow** (Smoothly center view on the player).
+- [x] **Automatic Deploy to GitHub Pages**
 
 ## Try It
 
