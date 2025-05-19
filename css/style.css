@@ -1,10 +1,10 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   background: #222;
-}
+} */
 
-.map {
+.map-container {
   position: relative;
   image-rendering: pixelated;
 }
@@ -26,7 +26,21 @@ body {
   height: 100%;
 }
 
+.grid {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+  position: relative;
+  z-index: 999;
+}
+
 .grid-line {
-  outline: 1px solid rgba(0, 255, 221, 0.5);
+  /* outline: 1px solid rgba(0, 255, 221, 0.5); */
+  background-color: rgba(0, 255, 221, 0.5);
+  position: absolute;
   z-index: 100;
+}
+
+.tile[data-solid] {
+  background-color: rgba(255, 0, 0, 0.5)
 }

@@ -1,0 +1,34 @@
+{
+  "name": "tile-quest",
+  "version": "1.0.0",
+  "description": "**TileQuest** is a lightweight HTML5/CSS/JavaScript engine for rendering Tiled maps (`.tmx`/`.json`) with keyboard-controlled character movement. It supports multi-layer maps, embedded tilesets, and smooth player navigation.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "preview": "vite preview",
+    "start:dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aagamezl/tile-quest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aagamezl/tile-quest/issues"
+  },
+  "homepage": "https://github.com/aagamezl/tile-quest#readme",
+  "devDependencies": {
+    "standard": "^17.1.2",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.6"
+  }
+}
