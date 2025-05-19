@@ -17,11 +17,11 @@ A live version is available! [Try TileQuest](https://aagamezl.github.io/tile-que
 
 ## Planned Improvements
 
-- [ ] **Collision Layers** (Block movement on specific tiles).
+- [ ] **Collision Detection** (Block movement on specific tiles).
 - [ ] **Playable Characters** Move your character with WASD or arrow keys.
 - [ ] **Customizable Maps/Tilesets**
-  - Load external maps
-  - Load external tilesets at runtime
+  - [x] Load external maps
+  - [x] Load external tilesets at runtime
 - [ ] **Multiplayer (WebSocket)**
   - Real-time player interactions
   - Shared map state synchronization
@@ -33,7 +33,51 @@ A live version is available! [Try TileQuest](https://aagamezl.github.io/tile-que
 
 ## Try It
 
+1. Clone the repository:
 ```sh
 git clone https://github.com/aagamezl/tile-quest.git
 cd tile-quest
 ```
+
+2. Install dependencies:
+```sh
+npm install
+```
+
+## Development
+
+Start the development server:
+```sh
+npm run start:dev
+```
+
+This will start a local development server with hot-reload enabled. Open your browser to `http://localhost:5173` to view the application.
+
+## Production Build
+
+To build for production:
+```sh
+npm run build
+```
+
+This will create a production-ready build in the `dist` directory. You can then serve the contents of the `dist` directory using any web server.
+
+To preview the production build locally:
+```sh
+npm run preview
+```
+
+This will start a local server to preview the production build.
+
+## Assets
+
+Here are the assets used in this project:
+
+- [map.tmj](assets/map.tmj) - Tiled map file
+- [barrel.png](assets/tileset/barrel.png) - Barrel tile texture
+- [dirt.png](assets/tileset/dirt.png) - Dirt tile texture
+- [grass.png](assets/tileset/grass.png) - Grass tile texture
+- [house.png](assets/tileset/house.png) - House tile texture
+- [signs.png](assets/tileset/signs.png) - Signs tile texture
+- [treetop.png](assets/tileset/treetop.png) - Tree top tile texture
+- [trunk.png](assets/tileset/trunk.png) - Tree trunk tile texture
