@@ -1,0 +1,40 @@
+.sprite-preview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sprite-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.sprite-preview:hover {
+    border-color: #4a90e2;
+}
+
+.sprite-preview.selected {
+    border-color: #4a90e2;
+}
+
+.sprite-frame {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.sprite-frame:hover {
+    border-color: #4a90e2;
+}

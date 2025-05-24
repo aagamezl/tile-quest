@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tile Quest</title>
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="src/modules/maps/maps.styles.css" />
+  <link rel="stylesheet" href="src/modules/sprites/sprite.styles.css" />
 </head>
 
 <body>
@@ -57,9 +59,12 @@
     <!-- Main Interface -->
     <div class="row">
       <!-- Map Area -->
-      <div class="col-md-3" id="mapArea">
-        <!-- Control Panel -->
+      <div class="col-md-2" id="mapArea">
+        <!-- Tileset Controls -->
         <div class="card mb-3">
+          <div class="card-header">
+            <h5 class="card-title mb-0">Tilesets</h5>
+          </div>
           <div class="card-body">
             <div class="d-flex flex-column gap-2">
               <!-- Map Controls -->
@@ -99,6 +104,25 @@
 
         <!-- Map Container -->
         <div id="mapContainer" class="map-container rounded shadow-sm"></div>
+      </div>
+
+      <!-- Character Controls -->
+      <div class="col-md-2">
+        <div class="card mb-3">
+          <div class="card-header">
+            <h5 class="card-title mb-0">Character Sprites</h5>
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-column gap-2">
+              <!-- Sprite Upload -->
+              <div class="d-flex gap-2">
+                <input type="file" id="spriteFileUpload" class="form-control" accept="image/*" multiple>
+              </div>
+              <!-- Sprite Preview Container will be added dynamically -->
+              <div id="spritePreviewContainer"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
